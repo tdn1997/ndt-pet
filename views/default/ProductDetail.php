@@ -8,7 +8,7 @@
 					<img src="/nguyen-duy-thuan/images/uploads/<?php echo $data['anhchinh'] ?>" class="main-prd-img">
 					<div class="basic-info">
 						<h2><?php echo $data['tensp'] ?></h2>
-						<span class="main-prd-price"><?php echo $data['gia'] ?> VND</span>
+						<span class="main-prd-price"><?php echo number_format( $data['gia']) ?> VND</span>
 						<hr/>
 						<h4><b>Thông tin cơ bản</b></h4>
 						<ul>

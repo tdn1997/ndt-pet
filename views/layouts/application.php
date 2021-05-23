@@ -117,9 +117,22 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 					<li class="menu-name" id="mntq"><a href="product/List/BestSelling">Mua nhiều tuần qua</a></li>
 
 				</ul>
-				<div style="cursor: pointer;"><a href="client/viewcart" style="color: yellow"><i class="glyphicon glyphicon-shopping-cart navbar-right btn-lg" id="cart_count"> 
-					<?php if(isset($_SESSION['cart'])){echo count($_SESSION['cart']);} else echo "0"; ?>
-				</i></a></div>
+				<div style="cursor: pointer;
+							position: fixed;
+							right: 0;
+							top: 30%;
+							padding: 12px;
+    						font-size: 16px;
+							background: #d44000;
+							border-radius: 8px 0 0 8px;
+							line-height: 1;"
+				>
+					<a href="client/viewcart" style="color: yellow">
+						<i class="glyphicon glyphicon-shopping-cart" id="cart_count">
+							<?php if(isset($_SESSION['cart'])){echo count($_SESSION['cart']);} else echo "0"; ?>
+						</i>
+					</a>
+				</div>
 				<form action="#" id="searchForm" class="navbar-form navbar-right searchbox-desktop">
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Bạn tìm gì?" id='srch-val'>

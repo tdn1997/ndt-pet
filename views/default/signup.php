@@ -3,9 +3,9 @@
 	<div class="row">
 		<div class="col-lg-3"></div>
 		<div class="col-lg-6">
-			<form action="" method="POST" role="form">
-				<legend>Đăng Ký</legend>
-			
+			<form action="" method="POST" role="form" onsubmit="register()">
+				<h2>Đăng Ký</h2>
+				<hr/>
 				<div class="form-group">
 					<label for="">Tên: </label>
 					<input type="text" class="form-control" id="name">
@@ -36,7 +36,7 @@
 				</div>
 				
 			
-				<div class="btn btn-primary" onclick="register()">Submit</div><br><br>
+				<button type="submit" class="btn btn-primary rounded">Đăng ký</button><br><br>
 				<a href="index/signin" style="float: right;">Đăng nhập</a><br>
 			</form>
 		</div>

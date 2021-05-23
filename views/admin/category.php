@@ -15,7 +15,7 @@
             <span class="btn btn-primary glyphicon glyphicon-plus btn-sm" id="addBtn"></span>
           </div>
           <div class="container" id="addArea" style="width: 100%; display: none; padding-bottom: 10px;">
-            <form action="" method="POST" role="form">
+            <form action="#" method="POST" role="form">
               <legend>Thêm danh mục</legend>
               <i id="addError" style="color: red"></i>
               <div class="form-group">
@@ -27,7 +27,7 @@
                 <input type="text" class="form-control" id="categoryCountry">
               </div>
 
-              <span class="btn btn-success" id="add2Btn">Thêm</span>
+              <button type="button" class="btn btn-success" id="add2Btn">Thêm</button>
               <span class="btn btn-default" id="cancelAddBtn">Hủy</span>
             </form>
           </div>
@@ -44,7 +44,7 @@
                 <input type="text" class="form-control" id="categoryCountry4Edit">
               </div>
 
-              <button type="submit" class="btn btn-success" id="edit2Btn">Xong</button>
+              <button type="button" class="btn btn-success" id="edit2Btn">Xong</button>
               <span class="btn btn-default" id="cancelEditBtn">Hủy</span>
             </form>
           </div>
@@ -158,7 +158,8 @@
       cname = $('#categoryName').val();
       ccountry = $('#categoryCountry').val();
       if(cname == ''){
-        showAppModalBody('Bạn chưa điền tên danh mục!');
+        $('#modalThongBaoAdminBody').text('Thao tác thực hiện thành công!!');
+        $('#modalThongBaoAdmin').modal('show');
         return;
       }
     }
@@ -169,8 +170,8 @@
       data: {name, id,cname, ccountry,name4edit,country4edit},
       success: function(result){
         if(result == 'OK'){
-          showAppModalBody("Successful!");
-          location.reload();
+          $('#modalThongBaoAdminBody').text('Thao tác thực hiện thành công!!');
+          $('#modalThongBaoAdmin').modal('show');
         } else {
           $('#addError').html(result);
         }

@@ -135,7 +135,7 @@ function countPrice(){
   for (var i = 0; i < num.length ; i++) {
     sum += num[i]*price[i];
   }
-  sum = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  sum = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   $('#totalPrice').html(sum);
 }
 function delPrd(masp){

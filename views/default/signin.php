@@ -14,9 +14,9 @@
 					<label for="">Mật khẩu: </label>
 					<input type="password" class="form-control" name="password" id="password">
 				</div>
-				<input type="checkbox" id="rmbme" value="rl"><label> Nhớ tài khoản</label><br>
+				<input type="checkbox" id="rmbme" value="rl"><label> Nhớ tài khoản</label><br/><br/>
 
-				<div class="btn btn-primary" id="loginBtn">Submit</div><br><br>
+				<button class="btn btn-primary rounded" type="submit" id="loginBtn">Đăng nhập</button><br><br>
 				<!-- <input class="btn btn-primary" type="submit" value="Submit"><br><br> -->
 				<a style="float: right;" class="abc">Quên mật khẩu?</a><br>
 				<a href="index/signup" style="float: right;">Tạo tài khoản mới</a><br><br>
