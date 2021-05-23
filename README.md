@@ -8,5 +8,3 @@ Chức năng:<br>
 	+ Hiển thị tổng quan về thành viên và các đơn hàng.
 	+ Thêm xóa sửa thành viên, giao dịch, sản phẩm ...
 	+ Phân tích
-	
-# ndt-pet

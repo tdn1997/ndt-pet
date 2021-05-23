@@ -1,0 +1,13 @@
+.modal-dialog {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.modal-content {
+    border: none !important;
+}
